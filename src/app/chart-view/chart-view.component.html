@@ -1,0 +1,15 @@
+<div class="chart" style="width: 80%;">
+  <canvas
+    baseChart
+    [chartType]="'line'"
+    [datasets]="chartData"
+    [labels]="chartLabels"
+    [options]="chartOptions"
+    [legend]="false"
+    (chartClick)="onChartClick($event)"
+  >
+  </canvas>
+</div>
+<a mat-fab color="primary" routerLink="" class="home-button">
+  <fa-icon [icon]="faHome"></fa-icon>
+</a>

@@ -1,0 +1,15 @@
+<form>
+  <mat-form-field>
+    <input matInput placeholder="New Weight (Kg)" type="number" />
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date" />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <div class="weight-form-button">
+    <button mat-mini-fab color="basic" type="submit">
+      <fa-icon [icon]="faPlus"></fa-icon>
+    </button>
+  </div>
+</form>

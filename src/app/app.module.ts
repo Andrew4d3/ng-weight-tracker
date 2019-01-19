@@ -4,16 +4,45 @@ import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatCardModule, MatGridListModule } from "@angular/material";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { ChartsModule } from "ng2-charts";
+import {
+  MatCardModule,
+  MatGridListModule,
+  MatListModule,
+  MatButtonModule,
+  MatInputModule,
+  MatDatepickerModule,
+  MatNativeDateModule
+} from "@angular/material";
+import { WeightListComponent } from "./weight-list/weight-list.component";
+import { WeightItemComponent } from "./weight-item/weight-item.component";
+import { WeightFormComponent } from "./weight-form/weight-form.component";
+import { HomeViewComponent } from "./home-view/home-view.component";
+import { ChartViewComponent } from "./chart-view/chart-view.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    WeightListComponent,
+    WeightItemComponent,
+    WeightFormComponent,
+    HomeViewComponent,
+    ChartViewComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule,
+    MatButtonModule,
+    FontAwesomeModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
