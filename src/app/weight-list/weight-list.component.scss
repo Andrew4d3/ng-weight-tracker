@@ -6,4 +6,9 @@
   .weight-item {
     width: 100%;
   }
+
+  .mat-list-base .mat-list-item {
+    min-height: 48px !important;
+    height: auto;
+  }
 }

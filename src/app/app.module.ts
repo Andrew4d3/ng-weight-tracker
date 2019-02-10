@@ -1,11 +1,11 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { ChartsModule } from "ng2-charts";
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ChartsModule } from 'ng2-charts';
 import {
   MatCardModule,
   MatGridListModule,
@@ -14,12 +14,13 @@ import {
   MatInputModule,
   MatDatepickerModule,
   MatNativeDateModule
-} from "@angular/material";
-import { WeightListComponent } from "./weight-list/weight-list.component";
-import { WeightItemComponent } from "./weight-item/weight-item.component";
-import { WeightFormComponent } from "./weight-form/weight-form.component";
-import { HomeViewComponent } from "./home-view/home-view.component";
-import { ChartViewComponent } from "./chart-view/chart-view.component";
+} from '@angular/material';
+import { WeightListComponent } from './weight-list/weight-list.component';
+import { WeightItemComponent } from './weight-item/weight-item.component';
+import { WeightFormComponent } from './weight-form/weight-form.component';
+import { HomeViewComponent } from './home-view/home-view.component';
+import { ChartViewComponent } from './chart-view/chart-view.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ChartViewComponent } from "./chart-view/chart-view.component";
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    ChartsModule
+    ChartsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,21 @@
-<form>
+<form (ngSubmit)="save($event, myForm)" #myForm="ngForm">
   <mat-form-field>
-    <input matInput placeholder="New Weight (Kg)" type="number" />
+    <input
+      matInput
+      placeholder="New Weight (Kg)"
+      type="number"
+      name="weight"
+      (input)="weightEntry.value = $event.target.value"
+    />
   </mat-form-field>
   <mat-form-field>
-    <input matInput [matDatepicker]="picker" placeholder="Choose a date" />
+    <input
+      matInput
+      [matDatepicker]="picker"
+      placeholder="Choose a date"
+      name="date"
+      (dateInput)="weightEntry.date = $event.target.value"
+    />
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
