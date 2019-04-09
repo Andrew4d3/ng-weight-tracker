@@ -21,6 +21,7 @@ import { WeightFormComponent } from './weight-form/weight-form.component';
 import { HomeViewComponent } from './home-view/home-view.component';
 import { ChartViewComponent } from './chart-view/chart-view.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,

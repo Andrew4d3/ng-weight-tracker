@@ -32,7 +32,7 @@ export class WeightItemComponent implements OnInit {
   }
 
   delete() {
-    this.weightService.deleteWeightEntry(this.weight.id);
+    this.weightService.deleteWeightEntry(this.weight.id).subscribe(() => {});
   }
 
   prepareWeightChanges(newValue, key) {
